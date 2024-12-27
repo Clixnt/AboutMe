@@ -1,0 +1,686 @@
+body {
+    background: url(photo/blob-scene-haikei4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+a {
+    color: black;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+    /* H - Logo Name ClintLab */
+    & .logo-name p {
+        font-size: 30px;
+        font-family: papyrus;
+        font-weight: bolder;
+        width: 20vh;
+        text-align: center;
+        transition: all 0.4s;
+        
+        &:hover {
+            scale: 1.1;
+            transition: all 0.4s;
+        }
+    } 
+
+    /* H - Navigation Bar */
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & li {
+            display: inline-block;
+            text-shadow: whitesmoke 2px 2px 12px;
+            font-family: "Kanit", serif;
+            margin-left: 20px;
+            margin-right: 20px;
+            transition: all 0.3s;
+
+            &:hover {
+                scale: 1.2;
+                border-radius: 4px;
+                transition: all 0.3s;
+                background-image: url(photo/colors.png);
+                background-size: 100% 10%;
+                background-position: 100% 100%;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    /* H - Social Media Logo */
+    .icon-logo {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 20vh;
+
+        & .youtube, .facebook, .twitter {
+            transition: all 0.5s;
+
+            &:hover {
+                scale: 1.2;
+                transition: all 0.5s;
+            }
+        }
+    }
+}
+
+
+
+/*Contaiener 1 */
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92.5vh;
+
+    /* C1 - All of Container 1 */
+    & .all {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* C1 - (Left side) Max the cat */
+    & .image-main img {
+        filter: drop-shadow(0px 0px 10px gray);
+        transition: all 0.5s;
+
+        &:hover {
+            scale: 1.1;
+            transition: all 0.5s;
+            filter: drop-shadow(0px 0px 15px gray);
+        }
+    }
+
+    /* C1 - (Rigth side) Text About Me */
+    & .about-main p {
+        font-family: "Rubik", sans-serif;
+        overflow: hidden;
+
+        &#text1 {
+            font-size: 2.8rem;
+            font-weight: bolder;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transition: all 0.4s;   
+        
+            &::after {
+                content: ' Clint Justine N. Lorenzo';
+                color:rgb(241, 163, 45)  ;
+            }
+            &:hover {
+                transition: all 0.4s;   
+                scale: 1.05;
+            }
+        }
+
+        &#text2 {
+            font-size: 2.6rem;
+            font-weight: bolder;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transition: all 0.4s;   
+        
+            &::before {
+                content: '16 ';
+                color: rgb(241, 163, 45) ;
+            }
+        
+            &::after {
+                content: ' Love Cats';
+                color: chocolate;
+            }
+            &:hover {
+                transition: all 0.4s;   
+                scale: 1.05;
+            }
+            
+        }
+
+        &#text3 {
+            font-size: 0.8rem;
+            letter-spacing: 4px;
+            font-weight: bolder;
+            font-style: italic;
+            text-align: center;
+            padding-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        &#text4 {
+            font-size: 1rem;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+
+/* container2 - about section */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+
+    /* C2 - AboutMe Text */
+    & .about-section {
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+
+        & p {
+            font-family: "Rubik", sans-serif;
+            font-size: 28px;
+            padding-bottom: 15px ;
+            text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+
+            &::before {
+                content: 'AB';
+                color: rgb(241, 163, 45);
+                font-family: "Rubik", sans-serif;
+                font-size: 28px;
+            }
+            &::after {
+                content: 'ME';
+                color: chocolate;
+                font-family: "Rubik", sans-serif;
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+
+/* Container 2 Box Container */
+.container2 .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%; 
+    height: 90%;
+
+    /* C2 - All box .box1-bo2-.box3 */
+    & .box {
+        height: 600px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* C2 - Box1  */
+    & .box1 {
+        width: 265px;
+
+        /* Square1 on box1 */
+        & .square1 {
+            background-color:  rgb(241, 163, 45);
+            border-radius: 15px;
+            width: 100%;
+            height: 65%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            /* square 1 - sq1-name - ClintLab */
+            & #sq1-name p {
+                color: white;
+                text-shadow:  3px 2px 6px black;
+                font-size: 1rem;
+                font-family: "Source Code Pro", monospace;
+                text-align: center;
+            }
+            /* square 1 - sq1-name - Cat Stares at yo soul */
+            & #sq1-name img {
+                width:150px;
+                height:150px;
+                filter: drop-shadow( 3px 2px 6px black);
+                margin-top: 17px;
+                transition: all 0.7s;
+
+                &:hover {
+                    scale: 1.1;
+                    transition: all 0.7s;
+                }   
+            }
+            /* square 1 - sq1-des - passionate... */
+            & #sq1-des p {
+                color: white;
+                text-shadow:  3px 2px 6px black;
+                font-size: 0.9rem;
+                font-family: "Source Code Pro", monospace;
+                text-align: center;
+                margin-top: 15px;
+            }
+            /*  square 1 - Not a rickroll button */
+            button {
+                background-color: rgb(255, 194, 112);
+                border: white solid 1.5px;
+                border-radius: 5px;
+                padding: 2px 7px 2px 7px;
+                font-family: "Source Code Pro", monospace;
+                margin-top: 15px;
+                color: white;
+                box-shadow:  3px 2px 5px black;
+            }
+        }
+
+        /* Square2 on box1 */
+        & .square2 {
+            background-color: chocolate;
+            border-radius: 15px;
+            width: 100%;
+            height: 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            /* square 2 - Skills */
+            & p {
+                margin-bottom: 18px;
+                font-family: "Source Code Pro", monospace;
+                text-shadow:  3px 2px 6px black;
+                color: white;
+                font-size: 0.9rem;
+            }
+            /* square 2 - two image of programming icon */
+            & article {
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: center;
+                gap: 15px;
+
+                & img {
+                    width: 40px;
+                    height: 40px;
+                    filter: drop-shadow(7px 7px 10px);
+                    transition: all 0.5s;
+
+                    &:hover {
+                        scale: 1.2;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }
+
+    /* C2 - box2 */
+    & .box2 {
+        width: 400px;
+        background-image: url(photo/low-poly-grid-haikei.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 100%;
+        display: flex;
+        justify-content: end;
+        align-items: baseline;
+        padding: 20px;
+
+        /*Box 2 ClintLAB*/
+        & section {
+            backdrop-filter: blur(30px);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow:  3px 2px 5px black;
+
+            & p {
+                color: white;
+                font-size: 1rem;
+                font-family: "Source Code Pro", monospace;
+                text-align: center;
+                margin-bottom: 15px;
+                font-size: 25px;
+                text-shadow:  5px 2px 5px black;
+            }
+        }
+        /*Box 2 ClintLAB with button*/
+        & button {
+            border-radius: 10px;
+            background-color:  rgb(255, 234, 207);   
+            padding: 5px 10px 5px 10px;
+            margin-left: 5px;
+            box-shadow:  3px 2px 5px black;
+            font-family: "Source Code Pro", monospace;
+        }
+    }
+
+    /* C2 - Box 3 */
+    & .box3 {
+        width: 265px;
+        background-color:  rgb(255, 194, 112);
+
+        /* Cool Cat Image */
+        & img {
+            width: 130px;
+            height: 130px;
+            filter: drop-shadow( 3px 2px 6px black);
+            transition: all 0.7s;
+
+            &:hover {
+                scale: 1.1;
+                transition: all 0.7s;
+            }
+        }
+        /* About Me Text under img */
+        & #box-text {
+            color: white;
+            font-family: "Source Code Pro", monospace;
+            text-shadow:  5px 2px 5px black;
+
+            & #boxtext1 {
+                font-size: 0.9rem;
+                text-align: center;
+            }
+            & #boxtext2 {
+                font-size: 12px;
+            }
+            & #boxtext3 {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+
+/* container 2 box 3 logo */
+.container2 .box3 .box3-logo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+
+    /* hobby image icon */
+    & img {
+        transition: all 0.5s;
+        width: 30px;
+        height: 30px;
+        filter: drop-shadow( 3px 2px 6px black);
+        transition: all 0.3s;
+    }
+    & #chess, #cod, #spotify {
+        transition: all 0.3s;
+    
+        &:hover {
+            scale: 1.2;
+            transition: all 0.3s;
+        }
+    }
+}
+
+
+/* container 3 */
+.container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    /* C3 - Music Title _ Fav Msuic */
+    & .fav-music {
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Kanit", serif;
+
+        & p {
+            font-size: 28px;
+            font-weight: 500;
+            letter-spacing: 5px;
+            text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+
+            &::before {
+                content: 'FA';
+                color: rgb(241, 163, 45);
+            }
+            &::after {
+                content: 'C';
+                color: rgb(241, 163, 45);
+            }
+        }
+    }
+    /* C3 - Music Container of MusicA or music-music6 */
+    & .music-con {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto auto auto;
+
+        /* Container for co1 and do1 */
+        & .MusicA {
+            margin: 30px;
+            border-radius: 10px;
+            width: 80%;
+            height: 80%;
+            padding: 10px;
+
+            & .co1 {
+                display: flex;
+                justify-content: center;
+
+                & img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 10px;
+                    margin-top: 10px;
+                }
+            }
+            & .do1 {
+                text-align: center;
+                padding-top: 20px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        /* C3 - Background Colors for every msc image */
+        & .music1, .music6 {
+            background-color:  rgb(241, 163, 45);
+        }
+        & .music2, .music5 {
+            background-color: rgb(255, 194, 112);
+        }
+        & .music3, .music4 {
+            background-color: rgb(255, 234, 207);
+        }
+    }
+}
+
+/* container 4  */
+.container4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    /* C4 - Title_Projects */
+    & .con-pro {
+        text-align: center;
+        font-size: 30px;
+        font-family: "Kanit", serif;
+        padding-bottom: 30px;
+
+        & p {
+            font-size: 28px;
+            font-weight: 500;
+            letter-spacing: 5px;
+            text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+
+            &::before {
+                content: 'PRO';
+                color: rgb(241, 163, 45);
+            }
+            &::after {
+                content: 'S';
+                color: rgb(241, 163, 45);
+            }
+        }
+    }
+
+    /* C4 - Images, text for projects */
+    .sec-pro {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto auto;
+        gap: 15px;
+
+        & img {
+            width: 500px;
+            height: 250px;
+            border-radius: 9px;
+        }
+        & p {
+            text-align: center;
+            font-size: 18px;
+            font-family: "Kanit", serif;   
+            padding-bottom: 10px;
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* (4) Style for every box */
+        & .pro1 {
+            background-color:  chocolate;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        & .pro2 {
+            background-color:  rgb(241, 163, 45);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        & .pro3 {
+            background-color: rgb(255, 194, 112);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        & .pro4 {
+            background-color: rgb(255, 234, 207);
+            padding: 15px;
+            border-radius: 10px;
+        }
+    }
+
+    /* C4 - And many more */
+    & .con4-many {
+        background-color: lightsalmon;
+        border-radius: 9px;
+        width: 1070px;
+        height: 40px;
+        margin-top: 15px;
+
+        & p {
+            text-align: center;
+            font-size: 18px;
+            font-family: "Kanit", serif;
+            padding-top: 7px;   
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+/* (idk container) Button Hover Animation/transition */
+button {
+    transition: all 0.3s;
+
+    &:hover {
+        scale: 1.1;
+        transition: all 0.3s;
+        animation:ButtonAnimation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+}
+@keyframes ButtonAnimation {
+    0% {
+        border: solid 2px lightgreen;
+     }
+     40% {
+        border: solid 2px greenyellow;
+     }
+     80% {
+        border: solid 2px yellow;
+     }
+     100% {
+        border: solid 2px lightgreen;
+     }
+}
+
+/*  animation scroll */
+/* 
+    .container1, .container2, .container3, .container4 {
+        animation: fade;
+        animation-timeline: view();
+    }
+    @keyframes fade {
+        from {
+            opacity: 0.5;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    #text1, #text2, #text3, #text4, #MaxCat {
+        animation: fader linear;
+        animation-timeline: scroll();
+    }
+    @keyframes fader {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+        0% {
+            opacity: 1;
+        }
+    }   
+*/
+
+/* All Container Box Shadow */
+.box2,
+.box3,
+.square1, 
+.square2,
+.MusicA, 
+.proB  {
+    box-shadow: 0px 1px 7px 6px #ccc;
+}
+.container3 .music-con img, 
+.container4 .sec-pro .proB img {
+    filter: drop-shadow( 3px 2px 6px black);
+}
